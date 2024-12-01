@@ -25,12 +25,46 @@
   <!-- #HEADER-->
 
   <header class="header">
-  <div class="menu">
-          <div class="item"><a href="https://mariavccaraujo.github.io/socorro/"><i class="fas fa-home"></i>Página Inicial</a></div>
-
-<div class="item"><a href="https://mariavccaraujo.github.io/doencadechagas/odonto/index%20(1).html"><i class="fas fa-tooth"></i>Manejo Odontológico</a></div> <!-- Novo item -->
-<div class="item"><a href="https://mariavccaraujo.github.io/dados/DadosEpidemiologicos/index.html"><i class="fas fa-chart-line"></i>Dados Epidemiológicos</a></div>
+  
+  <header class="cabecalho">
+    <div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="side-bar active">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
         </div>
+        <div class="menu">
+
+         <div class="item"><a href="https://mariavccaraujo.github.io/dados/DadosEpidemiologicos/index.html"><i class="fas fa-chart-line"></i>Dados Epidemiológicos</a></div>
+                    <div class="item"><a href="https://mariavccaraujo.github.io/socorro/"><i class="fas fa-home"></i>Página Inicial</a></div>
+
+      </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="titulo-header">Doença de Chagas</p>
+    </div>
+
+    <div>
+      <button type="button" id="btnAumentar">A+</button>
+    </div>
+
+    <div>
+      <button type="button" id="btnDiminuir">A-</button>
+    </div>
+
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i></label>
+    </div>
+
+
+  </header>
       </div>
     <div class="header-top">
       
@@ -496,6 +530,27 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $('.sub-btn').click(function () {
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+
+      $('.menu-btn').click(function () {
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function () {
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+
+    });
+  </script>
 
 </body>
 
