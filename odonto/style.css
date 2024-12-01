@@ -38,7 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #810303;
+  background-color:var(--oxford-blue-1);
   box-shadow: 0.5px 0.5px 10px 0.5px #000;
   padding: 1rem 2rem;
   position: fixed;
@@ -75,9 +75,21 @@ main {
   background-color: #263238;
   color: #fff;
 }
+.dark H3{
+  color: var(--oxford-blue-1);
+  color: #ffffff;
+}
+.section-subtitle text-center {
+  color: var(--oxford-blue-1);
+  color: #ffffff;
+}
+.dark H2 {
+color: var(--oxford-blue-2);
+color: #ffffff;
 
+}
 .dark header{
-  background-color: #171e21;
+  background-color: #24333a;
   color: #fff;
 }
 
@@ -156,7 +168,7 @@ main {
 .line{
   width: 200px;
   height: 4px;
-  background: #810303;
+  background: var(--oxford-blue-1);
   margin: 10px auto;
   border-radius: 5px;
   color: #fff;
@@ -719,7 +731,7 @@ body {
 .logo {
   color: var(--oxford-blue-1);
   font-family: var(--ff-poppins);
-  font-size: 3.4rem;
+  font-size: 5.4rem;
   font-weight: var(--fw-800);
 }
 
@@ -788,6 +800,7 @@ body {
   font-size: var(--fs-6);
   line-height: 1.45;
   margin-block-end: 40px;
+  color: #353535;
 }
 
 .hero-form {
